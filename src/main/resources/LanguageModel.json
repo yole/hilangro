@@ -1,0 +1,1070 @@
+{
+    "concepts":[
+        {
+            "name": "See",
+            "POS": "Verb",
+            "class": 1
+        },
+        {
+            "name": "Strike",
+            "POS": "Verb",
+            "class": 3,
+            "tags": ["attack"]
+        },
+        {
+            "name": "Feed",
+            "POS": "Verb",
+            "class": 1
+        },
+        {
+            "name": "Call",
+            "POS": "Verb",
+            "class": 1
+        },
+        {
+            "name": "Attune",
+            "POS": "Verb",
+            "class": 2
+        },
+        {
+            "name": "Make",
+            "POS": "Verb",
+            "class": 2
+        },
+        {
+            "name": "Remove",
+            "POS": "Verb",
+            "class": 1
+        },
+        {
+            "name": "Eat",
+            "POS": "Verb",
+            "class": 2,
+            "tags": ["attack"]
+        },
+        { 
+            "name": "Let's",
+            "POS": "Hort",
+            "tags": ["pol"]
+        },
+        {
+            "name": "Place",
+            "POS": "Noun",
+            "class": 3
+        },
+        {
+            "name": "Please",
+            "POS": "Hon",
+            "tags": ["pol"]
+        },
+        {
+            "name": "Do",
+            "POS": "Ord",
+            "tags": ["pol"]
+        },
+        {
+            "name": "Spirit",
+            "POS": "Noun",
+            "class": 1
+        },
+        {
+            "name": "Object",
+            "POS": "Noun",
+            "class": 2
+        },
+        {
+            "name": "Life",
+            "POS": "Noun",
+            "class": 3
+        },
+        {
+            "name": "Light",
+	    "POS":"Noun",
+	    "class": 3		
+	},
+        {
+            "name": "Book",
+            "POS": "Noun",
+            "class": 2
+        },
+        {
+            "name": "I",
+            "POS": "Pronoun",
+            "phonotactics": "part",
+            "class": 1
+        },
+        {
+            "name": "You",
+            "POS": "Pronoun",
+            "phonotactics": "part",
+            "class": 1
+        },
+        {
+            "name": "This",
+            "POS": "Pronoun",
+            "phonotactics": "part",
+            "class": 2
+        },
+        {
+            "name": "Fire",
+            "POS": "Noun",
+            "class": 3,
+            "tags": ["element", "resistance"]
+        },
+        {
+            "name": "Lightning",
+            "POS": "Noun",
+            "class": 3,
+            "tags": ["element", "resistance"]
+        },
+        {
+            "name": "Cold",
+            "POS": "Noun",
+            "class": 3,
+            "tags": ["element", "resistance"]
+        },
+        {
+            "name": "Stone",
+            "POS": "Noun",
+            "class": 2,
+            "tags": ["element", "resistance"]
+        },
+        {
+            "name": "Quality",
+            "POS": "Noun",
+            "class": 3
+        },
+        {
+            "name": "Speak",
+            "POS": "Verb",
+            "class": 2
+        },
+        {
+            "name": "Come",
+            "POS": "Verb",
+            "class": 1
+        },
+        {
+            "name": "Help",
+            "POS": "Verb",
+            "class": 2
+        },
+        {
+            "name": "Open",
+            "POS": "Verb",
+            "class": 2,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Shut",
+            "POS": "Verb",
+            "class": 2,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Door",
+            "POS": "Noun",
+            "class": 2,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Attack",
+            "POS": "Verb",
+            "class": 3,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Breathe",
+            "POS": "Verb",
+            "class": 2,
+            "appearsIn": "Animish",
+            "tags": ["attack"]
+        },
+        {
+            "name": "Dog",
+            "POS": "Noun",
+            "class": 1,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Cat",
+            "POS": "Noun",
+            "class": 1,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Bird",
+            "POS": "Noun",
+            "class": 1,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Drake",
+            "POS": "Noun",
+            "class": 1,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Snake",
+            "POS": "Noun",
+            "class": 1,
+            "appearsIn": "Animish"
+        },
+        {
+            "name": "Slowed",
+            "POS": "Noun",
+            "class": 3,
+            "appearsIn": "Elemental",
+            "tags": ["status"]
+        },
+        {
+            "name": "Paralyzed",
+            "POS": "Noun",
+            "class": 3,
+            "appearsIn": "Elemental",
+            "tags": ["status"]
+        },
+        {
+            "name": "Blind",
+            "POS": "Noun",
+            "class": 3,
+            "appearsIn": "Elemental",
+            "tags": ["status"]
+        },
+        {
+            "name": "Deaf",
+            "POS": "Noun",
+            "class": 3,
+            "appearsIn": "Elemental",
+            "tags": ["status"]
+        },
+        {
+            "name": "Poisoned",
+            "POS": "Noun",
+            "class": 3,
+            "appearsIn": "Elemental",
+            "tags": ["resistance", "status"]
+        },
+        {
+            "name": "Elf",
+            "POS": "Noun",
+            "exclusiveTo": "Elven",
+            "translation": "edhel"
+        },
+        {
+            "name": "Human",
+            "POS": "Noun",
+            "exclusiveTo": "Rakrish",
+            "translation": "rakr"
+        },
+        {
+            "name": "Dwarf",
+            "POS": "Noun",
+            "exclusiveTo": "Dwarf",
+            "translation": "zwerf"
+        },
+        {
+            "name": "Kobold",
+            "POS": "Noun",
+            "exclusiveTo": "Kobold",
+            "translation": "zwellild"
+        },
+        {
+            "name": "Scalefolk",
+            "POS": "Noun",
+            "exclusiveTo": "Scalefolk",
+            "translation": "shaash"
+        },
+        {
+            "name": "Goblin",
+            "POS": "Noun",
+            "exclusiveTo": "Gnur",
+            "translation": "gnur"
+        }
+    ],
+    "languages":[
+        {
+            "name": "Theic",
+            "phonemes": {
+                "O": ["t", "d", "k", "g", "b", "p", "'"],
+                "V": ["a", "u", "e", "o"],
+                "W": { "choices": ["oa", "ao"], "sticky": true },
+                "U": { "choices": ["uo", "ua"], "sticky": true },
+                "E": { "choices": ["ie", "ia"], "sticky": true },
+                "C": ["s", "l", "n"],
+                "P": ["p", "t", "k", "s", "'"],
+                "I": { "choices": ["a", "o", "u"], "sticky": true },
+                "A": { "choices": ["a", "o", "u"], "sticky": true },
+                "Y": { "choices": ["e", "i"], "sticky": true },
+                "N": { "choices": ["n", "l", "s"], "sticky": true }
+            },
+            "phonotactics":{
+                "main":[
+                    { "phonemes": "OWC", "weight": 2 },
+                    { "phonemes": "OUC", "weight": 2 },
+                    { "phonemes": "OEC", "weight": 2 },
+                    { "phonemes": "OVCV", "weight": 6 },
+                    { "phonemes": "OVCV'", "weight": 3 }
+                ],
+                "part": [
+                    { "phonemes": "Pi" }
+                ]
+            },
+            "postTransform": [
+                { "from": "*", "to": "*tI", "POS": "Noun", "class": 1, "secondary": true },
+                { "from": "*", "to": "*tI", "POS": "Noun", "class": 3, "secondary": true },
+                { "from": "*", "to": "An*", "POS": "Verb", "class": 1 },
+                { "from": "*", "to": "Yl*", "POS": "Verb", "class": 2 },
+                { "from": "*", "to": "Yl*", "POS": "Verb", "class": 3 }
+
+            ]
+        },
+        {
+            "name": "Elemental",
+            "parent": "Theic",
+            "phonemes": {
+                "B": ["z", "r", "j", "t", "p", "k", "b", "d", "g", "'", "s", "l", "n", "m"],
+                "C": ["z", "r", "j"],
+                "V": ["a", "u", "i"],
+                "D": ["b", "d", "g"],
+                "A": ["a", "i"],
+                "O": ["a", "o", "u", "i", "e"],
+                "U": "O",
+                "N": ["b", "d", "g", "l", "m", "n", "z", "r" ],
+                "I": "^",
+                "K": ["r", "s"],
+                "E": ["a","o","e"]
+            },
+            "phonotactics": {
+                 "main": [
+                     { "phonemes": "CVDA", "weight": 2 },
+                     { "phonemes": "COjEK" }
+                 ]
+            },
+            "transform": [
+                { "group": [
+                    { "from": "e", "to": "i", "before": "B", "after": "B" },
+                    { "from": "oa", "to": "oja" },
+                    { "from": "ao", "to": "ajo" },
+                    { "from": "uo", "to": "ujo" },
+                    { "from": "ua", "to": "uja" },
+                    { "from": "ie", "to": "ije" },
+                    { "from": "ia", "to": "ija" },
+                    { "from": "i", "to": "ej", "before": "!j" },
+                    { "from": "e", "to": "he", "wordStart": true },
+                    { "from": "o", "to": "ho", "wordStart": true }
+                ]},
+                { "from": "l", "to": "r", "before": "O", "after": "U" },
+                { "from": "s", "to": "z", "before": "O", "after": "U" },
+                { "from": "n", "to": "nz", "before": "O", "after": "U" },
+                { "from": "s", "to": "z", "before": "N" },
+                { "from": "'", "to": "'a", "wordEnd": true },
+                { "from": "'", "to": "h", "before": "O", "after": "U" }
+            ],
+            "postTransform": [
+                { "from": "*", "to": "*dI", "POS": "Noun", "class": 1, "secondary": true },
+                { "from": "*", "to": "*dI", "POS": "Noun", "class": 3, "secondary": true },
+                { "from": "*", "to": "*-hI", "POS": "Noun", "class": 1, "primary": true },
+                { "from": "*", "to": "*-hI", "POS": "Noun", "class": 3, "primary": true }
+            ]
+        },
+        {
+            "name": "Animish",
+            "parent": "Theic",
+            "phonemes": {
+                "C": ["m", "s", "r"],
+                "V": ["a", "i", "e"],
+                "D": ["j", "w"],
+                "A": ["a", "e"],
+                "O": ["a", "u", "i", "e", "o"],
+                "W": ["aa", "oo", "uu", "ee"],
+                "N": "^",
+                "K": { "choices": ["kh", "x", "th"], "sticky": true }
+            },
+            "phonotactics": {
+                "main": [
+                    { "phonemes": "CVDA", "weight": 2 },
+                    { "phonemes": "CVKA" },
+                    { "phonemes": "CWK" },
+                    { "phonemes": "CWt"}
+                ]
+            },
+            "transform": [
+                { "from": "oa", "to": ["aa", "oo"] },
+                { "from": "ao", "to": ["aa", "oo"] },
+                { "from": "uo", "to": "uu" },
+                { "from": "ua", "to": "uu" },
+                { "from": "ie", "to": ["ii", "ee"] },
+                { "from": "ia", "to": ["ii", "ee"] },
+                { "from": "*", "to": "*te", "POS": "Noun", "class": 3 },
+                { "from": "*", "to": "*'e", "POS": "Noun", "class": 1 },
+                { "from": "'", "to": "x", "wordStart": true, "POS": "Pronoun" },
+                { "from": "'",  "to": "K" },
+                { "from": "e", "wordStart": true, "to": ["je", "we"] },
+                { "from": "o", "wordStart": true, "to": ["jo", "wo"] },
+                { "from": "p", "to": "b", "wordStart": true, "POS": "Pronoun" },
+                { "from": "t", "to": "d", "before": "!h", "wordStart": true, "POS": "Pronoun" },
+                { "from": "s", "to": "j", "wordStart": true, "POS": "Pronoun" },
+                { "from": "k", "to": "g", "before": "!h", "wordStart": true, "POS": "Pronoun" },
+                { "from": "kh'", "to": "kh" },
+                { "from": "th'", "to": "th" },
+                { "from": "x'", "to": "x" }
+            ],
+            "postTransform": [
+                { "from": "O", "to": "OO", "wordEnd": true },
+                { "from": "*", "to": "*N", "POS": "Pronoun", "class": 1, "secondary": true }
+            ]
+        },
+        {
+            "name": "Ancient Fey",
+            "parent": "Animish",
+            "phonemes": {
+                "C": ["z", "r", "j", "t", "p", "k", "b", "d", "g", "'", "s", "l", "n", "m", "v", "f", "rh", "w", "h", "kh", "th", "x" ],
+                "D": "C",
+                "V": ["a", "o", "u", "y", "i", "e"],
+                "W": ["a", "o", "y", "i", "e"],
+                "O": ["a", "u", "i", "e", "o"]
+            },
+            "transform": [
+                { "from": "w", "to": "hw" },
+                { "from": "j", "to": "hj" },
+                { "group": [
+                    { "from": "VlWW", "to": "VluW" },
+                    { "from": "VsWW", "to": "VsuW" },
+                    { "from": "VnWW", "to": "VnuW" },
+                    { "from": "Vl", "to": "Vlu", "before": "!u" },
+                    { "from": "Vs", "to": "Vsu", "before": "!u" },
+                    { "from": "Vn", "to": "Vnu", "before": "!u" }
+                ]},
+                { "from": "CVVD", "to": "VCVD", "wordStart": true },
+                { "from": "b",   "to": "v", "wordStart": true },
+                { "from": "p",   "to": "f", "wordStart": true },
+                { "from": "g",   "to": "n", "wordStart": true },
+                { "from": "d",   "to": "rh", "wordStart": true },
+                { "from": "*O", "to": "*Oku", "POS": "Noun", "class": 2 },
+                { "from": "kh",  "to": "h", "wordStart": true },
+                { "from": "th",  "to": "h", "wordStart": true },
+                { "from": "kh",  "to": "f" },
+                { "from": "x",   "to": "f" },
+                { "from": "th",  "to": "f" },
+
+                { "from": "l",   "to": ["r", "rh"], "wordEnd": true }
+            ],
+             "postTransform": [
+                { "from": "*", "to": "*l", "POS": "Hort" },
+                { "from": "*", "to": "*l", "POS": "Hon" },
+                { "from": "*", "to": "*l", "POS": "Ord" }
+            ]
+        },
+        {
+            "name": "Ancient Mortal",
+            "parent": "Animish",
+            "phonemes": {
+                "V": ["a", "e", "i"],
+                "W": ["a", "o", "u", "y", "i", "e"],
+                "U": ["u", "o", "i", "e", "a"],
+                "C": ["z", "r", "j", "t", "p", "k", "b", "d", "g", "'", "s", "l", "n", "m", "v", "f", "rh", "w", "kh", "th", "x"],
+                "D": "C"
+            },
+            "transform": [
+                { "from": "*", "to": "*bV", "POS": "Verb", "class": 1 },
+                { "from": "WWD", "to": "WDD" },
+                { "from": "CWW", "to": "CWm", "wordEnd": true },
+                { "from": "ssth", "to": "ss" },
+                { "from": "sskh", "to": "ss" },
+                { "from": "ssx", "to": "ss" },
+                { "from": "ssb", "to": "rrb" },
+                { "from": "sb", "to": "rb" },
+                { "from": "sst", "to": "str" },
+                { "from": "llt", "to": "ltr" },
+                { "from": "nnt", "to": "ntr" },
+                { "from": "llb", "to": "jlb" },
+                { "from": "nnb", "to": "jmb" },
+                { "from": "tth", "to": "nth" },
+                { "from": "kkh", "to": "nkh" },
+                { "from": "*", "to": "sU*", "POS": "Verb", "class": 2 },
+                { "from": "*", "to": "sU*", "POS": "Verb", "class": 3 },
+                { "from": "*W", "to": "*Wm", "POS": "Noun" },
+                { "from": "*W", "to": "*Wm", "POS": "Pronoun" },
+                { "from": "*W", "to": "*Ws", "POS": "Hort" },
+                { "from": "*W", "to": "*Ws", "POS": "Hon" },
+                { "from": "*W", "to": "*Ws", "POS": "Ord" },
+                { "from": "kh", "to": "khi", "wordEnd": true },
+                { "from": "x", "to": "xi", "wordEnd": true },
+                { "from": "th", "to": "thi", "wordEnd": true },
+                { "from": "k", "to": "kam", "wordEnd": true},
+                { "from": "ct", "to": "st" },
+                { "from": "khb", "to": "p" },
+                { "from": "thb", "to": "p" },
+                { "from": "xb", "to": "p" }
+            ],
+            "borrow": {
+                "from": "Elemental",
+                "transform": [
+                    { "from": "z", "to": "s" },
+                    { "from": "r", "to": "er", "wordStart": true },
+                    { "from": "j", "to": "", "wordStart": true },
+ 		    {"from": "ee", "to": "eu"}
+                ]
+            }
+        },
+        {
+            "name": "Sacred Speech",
+            "parent": "Elemental",
+            "phonemes": {
+                "A": ["a", "u", "i"],
+                "B": ["b", "d", "g"],
+                "P": ["p", "t", "k"]
+            },
+            "transform": [
+                { "group": [
+                    { "from": "B", "to": "Bh", "before": "A" },
+                    { "from": "P", "to": "ePh", "before": "A" },
+                    { "from": "Bo", "to": "aBu" },
+                    { "from": "Be", "to": "aBa" },
+                    { "from": "Po", "to": "uPu" },
+                    { "from": "Pe", "to": "uPa" }
+                ]},
+                { "from": "'", "to": "", "POS": "Pronoun" },
+                { "from": "'", "to": "ok" },
+                { "from": "nz", "to": "nn" },
+                { "from": "s", "to": "sh" }
+            ],
+            "borrow": {
+                "from": "Animish",
+                "transform": [
+                    { "from": "*", "to": ["bhe*", "dhe*", "ghe*"], "POS": "Noun" },
+                    { "from": "*", "to": "a*", "POS": "Verb" }
+                ]
+            }
+        },
+        {
+            "name": "Old Mountain Speech",
+            "parent": "Elemental",
+            "phonemes": {
+                "C": ["b", "g", "p", "t", "d"],
+                "V": ["a", "u", "i"],
+                "D": ["g", "m"],
+                "O": ["a", "u", "i", "e", "o"],
+                "A": "O",
+                "U": { "choices": ["o", "u"], "sticky": true },
+                "B": ["b", "g"],
+                "K": { "choices": ["k", "q"], "sticky": true }
+            },
+            "phonotactics": {
+                "main": [
+                    { "phonemes": "CrVD" }
+                ]
+            },
+            "loss": [
+                { "POS": "Verb", "class": 2 }
+            ],
+            "transform": [
+                { "from": "ij", "to": "l" },
+                { "from": "ej", "to": "e" },
+                { "from": "'", "to": "q" },
+                { "from": "oj", "to": "we" },
+                { "from": "uj", "to": "wi" },
+                { "from": "aja", "to": "ala"},
+                { "from": "ajo", "to": "alU" },
+                { "from": "bw", "to": "bv" },
+                { "from": "pw", "to": "pf" },
+                { "from": "jw", "to": "w" },
+                { "from": "jl", "to": "jel" },
+                { "from": "rw", "to": "r" },
+                { "from": "r", "to": "rz", "before": "O", "after": "A" },
+                { "from": "nz", "to": "ndz", "before": "O", "after": "A" },
+                { "from": "z", "to": "dz", "before": "O", "after": "A" },
+                { "from": "*", "to": "U*", "POS": "Verb", "class": 1 },
+                { "from": "ha", "to": "K", "wordEnd": true },
+                { "from": "hh", "to": "KK", "wordEnd": true }
+            ],
+            "borrow": {
+                "from": "Animish",
+                "transform": [
+                    { "from": "kh", "to": "kr" },
+                    { "from": "th", "to": "tr" },
+                    { "from": "x", "to": "hh" },
+                    { "from": "OOt", "to": "Oht", "wordEnd": true},
+                    { "from": "j", "to": "jz" },
+                    { "from": "w", "to": "kw" },
+                    { "from": "hh", "to": "KK", "wordEnd": true }	
+                                        
+                ]
+            }
+        },
+        {
+            "name": "Sylvan",
+            "parent": "Ancient Fey",
+            "phonemes": {
+                "C": ["r", "l", "rh" ],
+                "K": ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z", "'" ],
+                "V": [ "a", "i", "u" ],
+                "D": ["t", "m", "d", "v"],
+                "W": ["a", "o", "u", "y", "i", "e"],
+                "U": "W",
+                "L": ["l", "n", "s"],
+                "T": ["d", "g", "t", "k"]
+            },
+            "phonotactics": {
+                "main": [
+                    { "phonemes": "CVDe" }
+                ]
+            },
+            "transform": [
+                { "from": "a", "to": "ae", "wordStart": true },
+                { "from": "o", "to": "oe", "wordStart": true },
+                { "from": "u", "to": "ue", "wordStart": true },
+                { "from": "i", "to": "ia", "wordStart": true },
+                { "from": "e", "to": "ea", "wordStart": true },
+                { "from": "LuKW", "to": "LKW" },
+                { "from": "LuW", "to": "LvW" },
+                { "from": "u", "to": "", "wordEnd": true },
+                { "from": "ft", "to": "st" },
+                { "from": "f", "to": "v", "wordEnd": true },
+                { "from": "f", "to": "v", "before": "W", "after": "U" },
+                { "from": "hj", "to": "hi" },
+                { "from": "hw", "to": "q" },
+                { "from": "*", "to": "*lh", "POS": "Pronoun" },
+                { "from": "nnnK", "to": "K", "wordStart": true },
+                { "from": "nnK", "to": "K", "wordStart": true },
+                { "from": "nK", "to": "K", "wordStart": true },
+                { "from": "K", "to": "Ku", "wordStart": true, "wordEnd": true }
+
+            ],
+            "loss": [
+                { "POS": "Verb", "class": 1 }
+            ],
+            "borrow": {
+                "from": "Old Mountain Speech",
+                "appearsIn": "Elemental",
+                "transform": [
+                    { "from": "z", "to": "as", "wordStart": true },
+                    { "from": "r", "to": "ar", "wordStart": true },
+                    { "from": "w", "to": "aw", "wordStart": true },
+                    { "from": "j", "to": "hi" },
+                    { "from": "r", "to": "l", "wordEnd": true }
+                ]
+             
+            }
+        },
+        {
+            "name": "Imperial",
+            "parent": "Ancient Mortal",
+            "phonemes": {
+                "C": ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z", "'" ],
+                "D": "C",
+                "V": ["a", "e", "o", "i", "u", "y"],
+                "A": ["a", "o", "e", "i"],
+                "L": ["l", "n", "r"],
+                "I": ["i", "e"],
+                "W": ["au", "eu", "ou"],
+                "P": ["p", "m", "l", "f"],
+                "E": ["a", "e"],
+                "U": ["a", "e", "o", "i", "u", "y", "w"]
+            },
+            "phonotactics": {
+                "main": [
+                    { "phonemes": "WsPE" }
+                ]
+            },
+            "transform": [
+                { "from": "CADV", "to": "CAuDV", "before": "!U", "wordStart": true },
+                { "from": "ACV", "to": "AuCV", "before": "!U", "wordStart": true },
+                { "from": "CuDV", "to": "CyDV", "before": "!U", "wordStart": true },
+                { "from": "uCV", "to": "yCV", "before": "!U", "wordStart": true },
+
+                { "from": "kh", "to": "fh", "wordStart": true },
+                { "from": "x", "to": "fh", "wordStart": true },
+                { "from": "th", "to": "fh", "wordStart": true },
+                
+                { "from": "kh", "to": "c" },
+                { "from": "xx", "to": "cc" },
+                { "from": "x", "to": "c" },
+                { "from": "th", "to": "c" },
+
+                { "from": "um", "to": "mu", "wordEnd": true },
+                { "from": "rem", "to": "ry", "wordEnd": true },
+                { "from": "em", "to": "im", "wordEnd": true, "POS": "Noun" },
+                { "from": "am", "to": "um", "wordEnd": true },
+                { "from": "om", "to": "um", "wordEnd": true },
+                { "from": "im", "to": "em", "wordEnd": true, "POS": "Pronoun" },
+
+                { "from": "ss", "to": "sny", "wordEnd": true },
+                { "from": "ss", "to": "sn" },
+                { "from": "LL", "to": "Lty", "wordEnd": true },
+                { "from": "LL", "to": "Lt" },
+                { "from": "tt", "to": "nty", "wordEnd": true },
+
+                { "from": "rtb", "to": "rdb" },
+
+                { "from": "kI", "to": "cI" },
+
+                { "from": "np", "to": "mp" },
+                { "from": "jlb", "to": "ilb" },
+                { "from": "jmb", "to": "imb" },
+  
+                { "from": "w", "to": "v" }
+            ],
+            "loss": [
+                { "POS": "Hort" },
+                { "POS": "Hon" },
+                { "POS": "Ord" },
+                { "POS": "Verb", "class": 3 }
+            ]
+        },
+        {
+            "name": "Lost Speech",
+            "parent": "Sacred Speech",
+            "phonemes": {
+                "V": ["a", "o", "u", "y", "i", "e"],
+                "W": "V",
+                "B": ["b", "d", "g"],
+                "P": ["p", "t", "k"],
+                "K": ["kh", "th", "ph"]
+            },
+            "transform": [
+                { "group": [
+                    { "from": "aB", "to": "aB'", "wordStart": true },
+                    { "from": "uP", "to": "uP'", "wordStart": true },
+                    { "from": "a", "to": "o", "wordStart": true }
+                ]},
+                { "from": "VhW", "to": "VhjW" },
+
+                { "from": "Bh", "to": "B'", "wordStart": true },
+
+                { "from": "VbhW", "to": "VvvW" },
+                { "from": "VdhW", "to": "VzzW" },
+                { "from": "VghW", "to": "VgjW" },
+
+                { "from": "VjW", "to": "VdjW" },
+
+                { "from": "kh", "to": "sk" },
+                { "from": "th", "to": "st" },
+                { "from": "ph", "to": "sp" },
+                
+                { "from": "*", "to": "i*", "POS": "Pronoun" },
+
+                { "from": "sh", "to": "ch" },
+                { "from": "ok", "to": "okk", "wordStart": true }
+            ]
+        },
+        {
+            "name": "Gnur",
+            "parent": "Imperial",
+            "phonemes": {
+                "V": ["a", "o", "u", "y", "i", "e"],
+                "C": ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z", "'" ],
+                "I": ["i", "a", "e"],
+                "A": ["i", "e", "o"]
+            },
+            "transform": [
+                { "from": "sy", "to": "cy", "wordStart": true },
+                { "group": [
+                    { "from": "fhV", "to": "fjV" },
+                    { "from": "fh", "to": "p" }
+                ]},
+
+                { "from": "ou", "to": "ef" },
+                { "from": "eu", "to": "if" },
+                { "from": "ye", "to": "je" },
+                { "from": "iu", "to": "ju" },
+                { "from": "au", "to": "of" },
+
+                { "from": "fs", "to": "ps" },
+                { "from": "fd", "to": "vd" },
+                { "from": "fv", "to": "vv" },
+
+                { "from": "hC", "to": "hyC" },
+
+                { "from": "kh", "to": "gg" },
+                { "from": "h", "to": "g" },
+                { "from": "db", "to": "deb" },
+                { "from": "pm", "to": "pym" },
+                { "from": "fm", "to": "fym" },
+
+                { "from": "bi", "to": "p", "wordEnd": true },
+                { "from": "be", "to": "p", "wordEnd": true },
+
+                { "from": "tt", "to": "tc" },
+                { "from": "bb", "to": "bl" },
+
+                { "from": "a", "to": "ai", "wordEnd": true },
+                { "from": "A", "to": "'", "wordEnd": true },
+                { "from": "yj", "to": "yi"},
+                { "from": "y", "to": "yi", "wordEnd": true },
+                { "from": "u", "to": "ui", "wordEnd": true },
+
+
+
+                { "from": "gylV", "to": "gl" },
+                { "from": "kylV", "to": "kl" },
+
+                { "from": "em", "to": "aa", "wordEnd": true },
+
+                { "from": "psp'", "to": "sp", "wordEnd": true },
+                { "from": "psf'", "to": "ps", "wordEnd": true },
+                { "from": "g'", "to": "k", "wordEnd": true },
+                { "from": "d'", "to": "t", "wordEnd": true },
+                { "from": "im", "to": "in", "wordEnd": true },
+                { "from": "um", "to": "un", "wordEnd": true },
+                { "from": "sl'", "to": "si", "wordEnd": true },
+                { "from": "cc'", "to": "co", "wordEnd": true }
+            ]
+        },
+        {
+            "name": "Scalefolk",
+            "parent": "Imperial",
+            "phonemes": {
+                "C": ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z", "'" ],
+                "V": ["a", "o", "u", "y", "i", "e"]
+            },
+            "transform": [
+                { "from": "yC", "to": "ooC" },
+
+                { "from": "rdb", "to": "rv" },
+                { "from": "ccV", "to": "ch", "wordEnd": true },
+
+                { "from": "ti", "to": "tsi" },
+                { "from": "te", "to": "tse" },
+                { "from": "cV", "to": "chV" },
+                
+                { "from": "d", "to": "en", "wordStart": true },
+                { "from": "b", "to": "um", "wordStart": true },
+                { "from": "g", "to": "ang", "wordStart": true },
+                { "from": "y", "to": "o", "wordEnd":true },
+
+                { "from": "em", "to": "y", "wordEnd": true },
+                { "from": "um", "to": "y", "wordEnd": true },
+                { "from": "im", "to": "i", "wordEnd": true },
+
+                { "from": "ou", "to": "u" },
+                { "from": "eu", "to": "y" },
+                { "from": "ye", "to": "yi" },
+                { "from": "iu", "to": "ii" },
+                { "from": "au", "to": "uu" },
+
+                { "from": "tt", "to": "cc" },
+                { "from": "bb", "to": "ff" },
+                { "from": "pp", "to": "ff" },
+
+                { "from": "x", "to": "ss" },
+                { "from": "kh", "to": "ss" },
+                { "from": "th", "to": "ss" },
+                { "from": "fh", "to": "sh" },
+
+                { "from": "ccV", "to": "c" },
+
+                { "from": "hb", "to": "hf" },
+                { "from": "hd", "to": "hs" },
+                { "from": "hg", "to": "hh" },
+
+                { "from": "try", "to": "tyr", "wordEnd": true },
+ 
+                { "from": "mb", "to": "mm" },
+                { "from": "lb", "to": "lm" }
+            ]
+        },
+        {
+            "name": "Rakrish",
+            "parent": "Sylvan",
+            "phonemes": {
+                "W": ["a", "o", "u", "i", "e"],
+                "C": ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z", "'" ],
+                "A": ["a", "e", "i", "u"],
+                "R": ["r", "l", "s"]
+            },
+            "transform": [
+                { "from": "ae", "to": "ye", "wordStart": true },
+                { "from": "oe", "to": "yu", "wordStart": true },
+                { "from": "ue", "to": "oy", "wordStart": true },
+                { "from": "ia", "to": "ya", "wordStart": true },
+                { "from": "ea", "to": "ey", "wordStart": true },
+                { "from": "n", "to": "ng", "wordEnd": true },
+                { "from": "r", "to": "rn", "wordEnd": true },
+                { "from": "l", "to": "ln", "wordEnd": true },
+                { "from": "s", "to": "rh", "wordEnd": true },
+                { "from": "k", "to": "g", "wordEnd": true },
+
+                { "from": "dd", "to": "dn" },
+                { "from": "gg", "to": "gn" },
+                { "from": "tt", "to": "kt" },
+                { "from": "kk", "to": "tk" },
+                { "from": "Wv", "to": "Wr", "wordEnd": true },
+                { "from": "Cte", "to": "C", "wordEnd": true },
+                { "from": "Cfe", "to": "C", "wordEnd": true },
+                { "from": "e", "to": "r", "wordEnd": true },
+                { "from": "u", "to": "o", "POS": "!Pronoun", "wordEnd": true },
+                { "from": "hi", "to": "sh", "wordStart": true },
+                { "from": "h", "to": "f", "after": "!R" },
+                { "from": "lh", "to": ["lhi", "lha", "lhe"] },
+                { "from": "lvW", "to": "lgvW", "wordEnd": true },
+                { "from": "nvW", "to": "ngvW", "wordEnd": true },
+                { "from": "svW", "to": "skvW", "wordEnd": true },
+                { "from": "fW", "to": "yW", "wordEnd": true },
+                { "from": "ss", "to": "st" },
+                { "from": "ll", "to": "ld" },
+                { "from": "nn", "to": "nd" },
+                { "from": "arA", "to": "Ar", "wordStart": true },
+                { "from": "asA", "to": "Az", "wordStart": true },
+                { "from": "s", "to": "ks", "before": "!h", "wordStart": true },
+                { "from": "mW", "to": "Wm","wordStart": true },
+                { "from": "rW", "to": "Wr","wordStart": true },
+                { "from": "ksh", "to": "sh" }
+
+                            ]
+        },
+        {
+            "name": "Elven",
+            "parent": "Sylvan",
+            "phonemes": {
+                "E": ["e", "a", "i"],
+                "O": { "choices": ["e", "o"], "sticky": true },
+                "A": { "choices": ["a", "o"], "sticky": true },
+                "I": { "choices": ["i", "e"], "sticky": true }
+            },
+            "transform": [
+                { "from": "q", "to": "qu" },
+                { "from": "gg", "to": "nk" },
+                { "from": "dd", "to": "nt" },
+                { "from": "kk", "to": "sk" },
+                { "from": "tt", "to": "st" },
+                { "from": "oe", "to": "ei" },
+                { "from": "ea", "to": "ai" },
+                { "from": "ae", "to": "ai" },
+                { "from": "ue", "to": "oi" },
+                { "from": "de", "to": "ni", "wordEnd": true },
+                { "from": "vE", "to": "wE", "wordEnd": true },
+                { "from": "vo", "to": "wa", "wordEnd": true },
+                { "from": "vu", "to": "wo", "wordEnd": true },
+                { "from": "lh", "to": "ol", "wordEnd": true },
+                { "from": "v", "to": "m", "wordEnd": true },
+                { "from": "k", "to": "", "wordEnd": true },
+                { "from": "ia", "to": "io" },
+                { "from": "isk", "to": "sh" },
+                { "from": "ist", "to": "sht" },
+                { "from": "hi", "to": "si", "after": "!r" },
+                { "from": "te", "to": "ti", "wordEnd": true },
+                { "from": "fe", "to": "fi", "wordEnd": true },
+                { "from": "me", "to": "mi", "wordEnd": true },
+                { "from": "ar", "to": "Or", "wordStart": true },
+                { "from": "as", "to": "Os", "wordStart": true },
+                { "from": "*", "to": "*nA", "POS": "Noun", "class": 3 },
+                { "from": "*", "to": "*mIn", "POS": "Verb", "class": 2 },
+                { "from": "*", "to": "*mIn", "POS": "Verb", "class": 3 },
+ 	        { "from": "*", "to": "ala*", "POS": "Hon" },
+                { "from": "*", "to": "ala*", "POS": "Hort"},
+                { "from": "*", "to": "ala*", "POS": "Ord" }
+            ]
+        },
+        {
+             "name": "Dwarf",
+             "parent": "Old Mountain Speech",
+             "phonemes": {
+                "V": ["a", "o", "u", "y", "i", "e"],
+                "C": ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z", "'" ],
+                "F": { "choices": ["f", "h"], "sticky": true },
+                "R": { "choices": ["r", "lt"], "sticky": true },
+                "K": { "choices": ["k", "t"], "sticky": true },
+		"A": { "choices": ["a","o"], "sticky": true },
+                "D": ["b", "d", "g"],
+                "T": ["p", "t", "k", "q"]
+		},
+             "transform": [
+                 { "from": "k", "to": "sk", "wordStart": true, "before": "V" },
+                 { "from": "t", "to": "st", "wordStart": true, "before": "V" },
+                 { "from": "p", "to": "sp", "wordStart": true, "before": "V" },
+                 { "from": "r", "to": "Fr", "wordStart": true },
+                 { "from": "oD", "to": "aD", "wordStart": true},
+                 { "from": "uD", "to": "aD", "wordStart": true},
+                 { "from": "aT", "to": "uT", "wordStart": true},                 
+                 { "from": "z", "to": "r" },
+                 { "from": "bv", "to": "b" },
+                 { "from": "ei", "to": "ai" },
+                 { "from":  "ee", "to": "ii"},
+                 { "from": "eo", "to": "u" },
+                 { "from": "ea", "to": "el" },
+                 { "from": "ia", "to": "il" },
+                 { "from": "ie", "to": "ij" },
+                 { "from": "u", "to": "", "wordEnd": true },
+                 { "from": "l", "to": "R", "wordEnd": true },
+                 { "from": "m", "to": "mb", "after": "V", "wordEnd": true },
+                 { "from": "s", "to": "sK", "after": "V", "wordEnd": true },
+                 { "from": "n", "to": "nd", "after": "V", "wordEnd": true },
+                 { "group": [
+                     { "from": "e", "to": "el", "wordEnd": true, "POS": "Pronoun" },
+                     { "from": "e", "to": "l", "wordEnd": true }
+                 ]},
+		 { "from": "a", "to": "al", "wordEnd": true },
+                 { "from": "g", "to": "", "wordEnd": true }, 
+                 { "from": "kk", "to": "kkA", "wordEnd": true },
+                 { "from": "qq", "to": "ck", "wordEnd": true },
+		 { "from": "kr", "to": "kAr", "wordEnd": true },
+	 	 { "from": "tr", "to": "tAr", "wordEnd": true },
+                 { "from": "ht", "to": "t", "wordEnd": true },
+                 { "from": "rl", "to": "rel" },
+                 { "from": "io", "to": "ie" },
+                 { "from": "hh", "to": "kk" },
+                 { "from": "wl", "to": "wel" },
+                 { "from": "dl", "to": "dr", "wordStart": true },
+                 { "from": "j", "to": "dj", "wordStart": true }
+             ]
+        },
+        {
+            "name": "Kobold",
+            "parent": "Old Mountain Speech",
+            "phonemes": {
+                "C": ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z", "'" ],
+                "E": { "choices": ["e", "i"], "sticky": true },
+                "U": ["a", "o", "u", "e", "i"],
+                "O": "U",
+                "X": { "choices": ["x", "s", "f"], "sticky": true},
+		"D": ["b", "d", "g"],
+                "T": ["p", "t", "k", "q"]
+		
+             },
+            "transform": [
+                { "from": "ea", "to": "yy" },
+                { "from": "eo", "to": "yo" }, 
+                { "from":  "ee", "to": "ye"},
+                
+                { "from": "i", "to": "y" },
+                
+                { "group": [
+                    { "from": "bC", "to": "bC" },
+                    { "from": "b", "to": "m" }
+                ]},
+                 { "from": "oT", "to": "ET", "wordStart": true},
+                 { "from": "uT", "to": "ET", "wordStart": true},
+                 { "from": "aD", "to": "uD", "wordStart": true},                 
+                
+                { "from": "z", "to": "d" },
+                
+                { "from": "a", "to": "ai", "wordEnd": true },
+                { "from": "u", "to": "", "wordEnd": true },
+
+                { "from": "n", "to": "ng", "wordEnd": true },
+                { "from": "s", "to": "sh", "wordEnd": true },
+
+                { "from": "e", "to": "ei", "wordEnd": true },
+
+                { "from": "gru", "to": "gur" },
+                { "from": "gra", "to": "gar" },
+                { "from": "kl", "to": "gl" },
+                { "from": "pl", "to": "bl" },
+                { "from": "hh", "to": "qq" },
+                {"from": "qq", "to": "qqE", "wordEnd": true},
+                {"from": "kk", "to": "kkE", "wordEnd": true},
+                {"from": "dd", "to": "d", "wordEnd": true},
+                { "from": "kr", "to": "kEr", "wordEnd": true },
+		{ "from": "tr", "to": "tEr", "wordEnd": true },
+                { "from": "l", "to": "lk", "wordEnd": true },
+                { "from": "m", "to": "mp", "wordEnd": true },
+                {  "from": "ht", "to": "Xt", "wordEnd": true },
+                { "from": "OjU", "to": "OljU" },
+                { "from": "OlU", "to": "OllU"},
+                { "from": "g", "to": "gg", "wordEnd": true }
+            ]
+        }
+    ]
+}
