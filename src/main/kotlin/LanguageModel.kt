@@ -42,7 +42,9 @@ data class Concept(val name: String,
     }
 }
 
-private fun <T> List<T>.randomElement() = this[(Math.random() * size).toInt()]
+var sourceOfRandomness = { -> Math.random() }
+
+private fun <T> List<T>.randomElement() = this[(sourceOfRandomness() * size).toInt()]
 
 class PhonemeSet(val choices: List<String>) {
     fun generate() = choices.randomElement()
@@ -88,17 +90,29 @@ data class WordType(val phonemes: String, val weight: Int) {
 }
 
 class Phonotactics(val phonemeTable: PhonemeTable,
-                   val wordTypes: List<WordType>) {
+                   wordTypes: List<WordType>) {
+
+    val weighedWordTypes = repeatAccordingToWeight(wordTypes)
+
     companion object {
         fun readFromJson(phonemeTable: PhonemeTable, value: JsonNode): Phonotactics {
-            return Phonotactics(phonemeTable,
-                    value.map { WordType.readFromJson(it) }
-            )
+            val wordTypes = value.map { WordType.readFromJson(it) }
+            return Phonotactics(phonemeTable, wordTypes)
+        }
+
+        private fun repeatAccordingToWeight(wordTypes: List<WordType>): List<WordType> {
+            val weighedWordTypes = mutableListOf<WordType>()
+            for (wordType in wordTypes) {
+                for (i in 1..wordType.weight) {
+                    weighedWordTypes.add(wordType)
+                }
+            }
+            return weighedWordTypes
         }
     }
 
     fun generateWord(): String {
-        val wordType = wordTypes.randomElement()
+        val wordType = weighedWordTypes.randomElement()
         return wordType.phonemes.map { c ->
             if (c.isUpperCase())
                 phonemeTable.generate(c)
