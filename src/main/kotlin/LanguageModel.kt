@@ -5,7 +5,20 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.File
 
 enum class PartOfSpeech {
-    None, Verb, Noun, Pronoun, Honorific, Order, Hortative
+    None, Verb, Noun, Pronoun, Honorific, Order, Hortative;
+
+    companion object {
+        fun fromJson(posName: String): PartOfSpeech {
+            return posNames[posName] ?: valueOf(posName)
+        }
+
+        fun fromJsonAsSet(posName: String): Set<PartOfSpeech> {
+            if (posName.startsWith("!")) {
+                return values().toSet() - setOf(fromJson(posName.substring(1)))
+            }
+            return setOf(fromJson(posName))
+        }
+    }
 }
 
 val posNames = mapOf(
@@ -17,11 +30,11 @@ val posNames = mapOf(
 data class Concept(val name: String,
                    val partOfSpeech: PartOfSpeech,
                    val wordClass: Int,
-                   val tags: List<String>,
-                   val phonotactics: String?,
-                   val appearsIn: String?,
-                   val exclusiveTo: String?,
-                   val translation: String?) {
+                   val tags: List<String> = emptyList(),
+                   val phonotactics: String? = null,
+                   val appearsIn: String? = null,
+                   val exclusiveTo: String? = null,
+                   val translation: String? = null) {
     companion object {
         fun readListFromJson(jsonNode: JsonNode): List<Concept> = jsonNode.map(this::readFromJson)
 
@@ -30,7 +43,7 @@ data class Concept(val name: String,
 
             val name = jsonNode["name"].asText()
             val posName = jsonNode["POS"].asText("None")
-            val pos = posNames[posName] ?: PartOfSpeech.valueOf(posName)
+            val pos = PartOfSpeech.fromJson(posName)
             val wordClass = jsonNode["class"]?.asInt() ?: 0
             val tags = jsonNode["tags"]?.map { it.asText() } ?: emptyList()
             return Concept(name, pos, wordClass, tags,
@@ -44,7 +57,7 @@ data class Concept(val name: String,
 
 var sourceOfRandomness = { -> Math.random() }
 
-private fun <T> List<T>.randomElement() = this[(sourceOfRandomness() * size).toInt()]
+fun <T> List<T>.randomElement() = this[(sourceOfRandomness() * size).toInt()]
 
 class PhonemeSet(val choices: List<String>) {
     fun generate() = choices.randomElement()
@@ -53,6 +66,9 @@ class PhonemeSet(val choices: List<String>) {
         fun readFromJson(phonemeSetNode: JsonNode): PhonemeSet {
             if (phonemeSetNode.isArray) {
                 return PhonemeSet(phonemeSetNode.map { it.asText() })
+            }
+            if (phonemeSetNode.isTextual) {
+                return PhonemeSet(listOf(phonemeSetNode.asText()))
             }
             val choices = phonemeSetNode["choices"].map { it.asText() }
             val sticky = phonemeSetNode["sticky"].asBoolean()
@@ -83,8 +99,9 @@ class PhonemeTable(val phonemes: Map<Char, PhonemeSet>) {
 data class WordType(val phonemes: String, val weight: Int) {
     companion object {
         fun readFromJson(jsonNode: JsonNode): WordType {
-            return WordType(jsonNode["phonemes"].asText(),
-                    jsonNode["weight"].asInt())
+            val phonemes = jsonNode["phonemes"].asText()
+            val weight = jsonNode["weight"]?.asInt() ?: 1
+            return WordType(phonemes, weight)
         }
     }
 }
@@ -124,7 +141,8 @@ class Phonotactics(val phonemeTable: PhonemeTable,
 
 data class Language(val name: String,
                     val phonemeTable: PhonemeTable,
-                    val phonotactics: Map<String, Phonotactics>) {
+                    val phonotactics: Map<String, Phonotactics>,
+                    val transformRules: List<TransformRule>) {
     companion object {
         fun readListFromJson(jsonNode: JsonNode): List<Language> = jsonNode.map(this::readFromJson)
 
@@ -132,14 +150,37 @@ data class Language(val name: String,
             val name = jsonNode["name"].asText()
             val phonemeTable = PhonemeTable.readFromJson(jsonNode["phonemes"])
             val phonotactics = mutableMapOf<String, Phonotactics>()
-            for ((name, value) in jsonNode["phonotactics"].fields()) {
-                phonotactics[name] = Phonotactics.readFromJson(phonemeTable, value)
+            val phonotacticsNode = jsonNode["phonotactics"]
+            if (phonotacticsNode != null) {
+                for ((name, value) in phonotacticsNode.fields()) {
+                    phonotactics[name] = Phonotactics.readFromJson(phonemeTable, value)
+                }
             }
+            val transformRules = jsonNode["transform"]?.let { transformsNode ->
+                loadTransformRules(phonemeTable, transformsNode)
+            } ?: emptyList()
+
             return Language(
                 name,
                 phonemeTable,
-                phonotactics
+                phonotactics,
+                transformRules
             )
+        }
+
+        private fun loadTransformRules(phonemeTable: PhonemeTable,
+                                       jsonNode: JsonNode): List<TransformRule> {
+            val result = mutableListOf<TransformRule>()
+            for (transformNode in jsonNode) {
+                val group = transformNode["group"]
+                if (group != null) {
+                    // TODO
+                }
+                else {
+                    result.add(TransformRule.readFromJson(phonemeTable, transformNode))
+                }
+            }
+            return result
         }
     }
 }
